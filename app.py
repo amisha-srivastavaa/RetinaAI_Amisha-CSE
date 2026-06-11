@@ -25,6 +25,13 @@ def load_data():
 
 df = load_data()
 
+@st.cache_resource
+def load_mock_model():
+    # In reality, this would be: torch.load('best_model.pth')
+    return "model_loaded"
+
+model = load_mock_model()
+
 # --- SIDEBAR: STUDENT SELECTION ---
 st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3135/3135768.png", width=100)
 st.sidebar.title("Counsellor Portal")
