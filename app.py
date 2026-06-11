@@ -52,11 +52,11 @@ with col2:
     # Simulate loading model
     if st.button("Run Risk Analysis"):
         with st.spinner("Processing Tabular Data (MLP)..."):
-            time.sleep(0.5)
+            pass
         with st.spinner("Analyzing Attendance Trends (LSTM)..."):
-            time.sleep(0.5)
+            pass
         with st.spinner("Running NLP on Counsellor Notes (DistilBERT)..."):
-            time.sleep(0.7)
+            pass
         
         # Mock prediction logic (Deterministic based on hash of ID for consistency in demo)
         risk_hash = hash(selected_student) % 3
