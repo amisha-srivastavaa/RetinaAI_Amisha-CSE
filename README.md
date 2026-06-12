@@ -23,9 +23,15 @@ Every year, thousands of students drop out because their warning signs go unnoti
 ## 💻 How to Run/Install it
 
 **1. Training the Model (Kaggle)**
-*   Upload the `kaggle_solution.ipynb` file to Kaggle.
+*   Upload the `model_training.ipynb` file to Kaggle.
 *   Ensure your Accelerator is set to `GPU`.
 *   Click "Run All" to train the model and generate the `submission.csv`.
+
+**Repository Structure:**
+*   `model_training.ipynb`: The complete ML pipeline to run on Kaggle.
+*   `dashboard.py`: The Streamlit frontend dashboard for real-world interventions.
+*   `build_notebook.py`: Utility script to generate the Kaggle notebook.
+*   `test_pipeline.py`: Basic test suite.
 
 **2. Running the UI Dashboard (Local)**
 ```bash
@@ -37,7 +43,7 @@ cd retina-ai-dropout
 pip install streamlit pandas numpy torch transformers scikit-learn
 
 # Run the app
-streamlit run app.py
+streamlit run dashboard.py
 ```
 
 ## 🚀 Future Scope

@@ -402,7 +402,7 @@ print(f"✓ Submission saved with {len(submission)} predictions")""")
         "nbformat_minor": 4
     }
     
-    with open('kaggle_solution.ipynb', 'w') as f:
+    with open('model_training.ipynb', 'w') as f:
         json.dump(notebook, f, indent=1)
 
 if __name__ == "__main__":
